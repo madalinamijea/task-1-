@@ -1,25 +1,20 @@
 <html>
-
-
     <body>
-    <button onclick="Decrease()" value="Decrease">-</button>
-    <p id="referinta" value="Count"> 0 </p>
-    <button onclick="Increase()" value="Increase">+</button>
+        <button onclick="decrease()" value="Decrease">-</button>
+        <p id="reference" value="Count">0</p>
+        <button onclick="increase()" value="Increase">+</button>
     </body>
-<script>
-     var Count=0;
+    <script>
+        var count = 0;
 
-function Increase()
-{
-   Count++;               
-    document.getElementById("referinta").innerHTML=Count;
-}
+        function increase() {
+            count++;
+            document.getElementById("reference").innerHTML = count;
+        }
 
-function Decrease()
-{
-   Count--;               
-    document.getElementById("referinta").innerHTML=Count;
-}
+        function decrease() {
+            count--;
+            document.getElementById("reference").innerHTML = count;
+        }
     </script>
-
 </html>
